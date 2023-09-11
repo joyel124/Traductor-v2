@@ -10,21 +10,34 @@ body {
   left: 0;
 }
 
+button {
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Agregar una transición suave */
+}
+
 #addSpacingButton {
   position: absolute;
   top: 5;
   left: 5;
+  background-color: rgb(32, 32, 32);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#addSpacingButton:active {
+  background-color: rgb(114, 105, 105); /* Cambia el color de fondo cuando se presiona */
 }
 
 #selectButton{
+  text-align: center;
   position: absolute;
   top: 0;
   left: 50%; /* Deja el 50% como punto de referencia */
   transform: translateX(-50%);
-  z-index: 1;
+  z-index: 2;
   background-color: #ffffff; /* Color de fondo */
   color: #000000; /* Color del texto */
-  border: 1px solid #000000; /* Borde */
+  border: 3px solid #2847ac; /* Borde */
   padding: 5px 10px; /* Relleno interno */
   font-size: 16px; /* Tamaño de fuente */
   border-radius: 5px; /* Borde redondeado */
@@ -35,13 +48,22 @@ body {
   position: absolute;
   top: 5;
   left: 50%;
-  transform: translateX(-50%);
+  background-color: rgb(32, 32, 32);
+}
+
+#soundButton:active {
+  background-color: rgb(114, 105, 105); /* Cambia el color de fondo cuando se presiona */
 }
 
 #deleteButton {
   position: absolute;
   top: 5;
   right: 5;
+  background-color: rgb(32, 32, 32);
+}
+
+#deleteButton:active {
+  background-color: rgb(114, 105, 105); /* Cambia el color de fondo cuando se presiona */
 }
 
 .text{
