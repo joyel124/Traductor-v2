@@ -48,6 +48,7 @@ button {
   position: absolute;
   top: 5;
   left: 50%;
+  transform: translateX(-50%);
   background-color: rgb(32, 32, 32);
 }
 
