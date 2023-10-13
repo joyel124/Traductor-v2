@@ -52,6 +52,10 @@ const createGestureRecognizer = async (selectedOption) => {
   //demosSection.classList.remove("invisible");
 };
 
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
 createGestureRecognizer('Perú');
 // this function counts the amount of video inputs
 // it replaces DetectRTC that was previously implemented.
